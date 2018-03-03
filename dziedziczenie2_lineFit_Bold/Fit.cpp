@@ -2,8 +2,7 @@
 #include "Fit.h"
 
 Fit::Fit() : m_exp("not declared"), m_sumxy(0),  m_sumxx(0), m_sumx(0), m_sumy(0),
-             m_a(0), m_b(0), m_numberOfPoints(0){
-}
+             m_a(0), m_b(0), m_numberOfPoints(0){}
 
 Fit::~Fit(){}
 

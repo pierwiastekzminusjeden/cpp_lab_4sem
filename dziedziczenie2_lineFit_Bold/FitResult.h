@@ -5,13 +5,12 @@
 
 //klasa pomocnicza wyświetlająca informacje
 class FitResult{
+    friend class SlopeFit;
+    friend class LineFit;
+    friend class Fit;
 
-public:
-    FitResult();
-
-    FitResult(int numberOfParams, std::string exp, int a, int b = 0);
-
-    ~FitResult();
+public:    
+    void set(std::string expression, int numberOfParams, double val0, double val1 = 0);
 
     std::string expression() const;
 
@@ -22,7 +21,8 @@ public:
     int nParams() const;
 
 private:
-    int m_name[2];
-    std::string m_exp;
+    char m_name[2];
+    std::string m_expression;
     int m_numberOfParams;
+    double m_values[2];
 };

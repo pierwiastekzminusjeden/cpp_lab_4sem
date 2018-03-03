@@ -1,21 +1,13 @@
 #include <iostream>
 #include "SlopeFit.h"
 
-SlopeFit::SlopeFit(){
 
-}
-SlopeFit::SlopeFit(std::string exp)
-{
-}
-
-SlopeFit::~SlopeFit()
-{
+SlopeFit::SlopeFit(std::string expr): Fit(){
+    m_exp = expr;
+    m_numberOfPoints = 0;
 }
 
-void SlopeFit::appendPoint(const double xi, const double yi) const
-{
-}
-
-FitResult & SlopeFit::result() const
-{
+FitResult & SlopeFit::result(){
+    fitRes.set("y = a * x", 1, m_a);
+    return fitRes;
 }

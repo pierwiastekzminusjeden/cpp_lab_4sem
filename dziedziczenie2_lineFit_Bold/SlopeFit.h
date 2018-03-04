@@ -9,6 +9,9 @@ public:
     SlopeFit(std::string expr);
 
     virtual FitResult &result();
-    
-    virtual void set();
+
+    virtual void set(const double x, const double y);
+
+  private:
+    double m_a;
 };

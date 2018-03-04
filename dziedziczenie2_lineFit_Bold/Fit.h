@@ -20,7 +20,7 @@ public:
 //Metoda wypisujaca typ reprezentacji prostej (slope fit lub line fit)
     virtual void print() const;
 //Metoda pomocnicza wykorzystywana przez metode appendPoint. Aktualizuje informacje o wspolczynniku a oraz b
-    virtual void set() = 0;
+    virtual void set(const double x = 0, const double y = 0) = 0;
 
 
 protected:

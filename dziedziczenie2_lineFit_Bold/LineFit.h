@@ -13,6 +13,9 @@ public:
 //o typie prostej oraz jej wspolczynnikach. Korzysta z FitResult::set()
     virtual FitResult &result();
 
-    virtual void set();
-    
+    virtual void set(const double x, const double y);
+
+  private:
+    double m_sumx, m_sumy;
+    double m_a, m_b;
 };

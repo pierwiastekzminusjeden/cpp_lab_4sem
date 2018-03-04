@@ -11,3 +11,6 @@ FitResult & SlopeFit::result(){
     fitRes.set("y = a * x", 1, m_a);
     return fitRes;
 }
+void SlopeFit::set(){
+    m_a = m_sumxy / m_sumxx;
+}

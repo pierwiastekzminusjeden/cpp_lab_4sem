@@ -12,5 +12,7 @@ public:
 //Metoda zwracajaca pomocniczy obiekt FitResult zawierajacy podstawowe informacje o prostej. Za pomoca obiektu zwracanego mozna wypisac informacje
 //o typie prostej oraz jej wspolczynnikach. Korzysta z FitResult::set()
     virtual FitResult &result();
-};
 
+    virtual void set();
+    
+};

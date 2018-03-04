@@ -1,7 +1,7 @@
 #pragma once
 #include "FitResult.h"
 
-//klasa bazowa zawierająca podstawowe metody pozwalajace na dopasowanie prostych do punktow oraz wypisanie formy dopasowania
+//klasa bazowa re
 class Fit{
 
 public:
@@ -19,10 +19,9 @@ public:
     virtual FitResult &result() = 0;
 //Metoda wypisujaca typ reprezentacji prostej (slope fit lub line fit)
     virtual void print() const;
-//Metoda pomocnicza wykorzystywana przez metode appendPoint. Aktualizuje informacje o wspolczynniku a. Uruchamiana w przypadku dopasowania Slope fit
-    virtual void setSf();
-//Metoda pomocnicza wykorzystywana przez metode appendPoint(). Aktualizuje informacje o wspolczynnikach a oraz b prostej, Uruchamiana w przypadku dopasowania line fit.
-    virtual void setLf();
+//Metoda pomocnicza wykorzystywana przez metode appendPoint. Aktualizuje informacje o wspolczynniku a oraz b
+    virtual void set() = 0;
+
 
 protected:
 //Zmienna przechowujaca informacje o typie reprezentacji prostej (slope fit lub Line Fit)

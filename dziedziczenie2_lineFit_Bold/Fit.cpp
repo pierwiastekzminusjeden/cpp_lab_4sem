@@ -17,22 +17,9 @@ void Fit::appendPoint(const double xi, const double yi){
     m_sumy += yi;
     m_numberOfPoints++;
 
-    if(m_exp == "slope fit")
-        setSf();
-    else
-        setLf();
+    set();
 }
 
 void Fit::print() const{
     std::cout << "This is " << m_exp << std::endl;
 }
-
-void Fit::setSf(){
-    m_a = m_sumxy / m_sumxx;
-}
-
-void Fit::setLf(){
-    m_a = (m_sumxy - m_sumx * m_sumy / m_numberOfPoints) / (m_sumxx - m_sumx * m_sumx / m_numberOfPoints);
-    m_b = (m_sumy - m_a * m_sumx) / m_numberOfPoints;
-}
-

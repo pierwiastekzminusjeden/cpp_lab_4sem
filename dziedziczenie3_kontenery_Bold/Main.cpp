@@ -40,6 +40,9 @@ using namespace oop;
 
 int main(int argc, char** argv)
 {
+
+
+	
 	Object();
 
 	std::auto_ptr<Object> o  (new Object);

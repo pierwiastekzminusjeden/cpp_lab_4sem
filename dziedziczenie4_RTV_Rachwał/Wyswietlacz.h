@@ -10,7 +10,7 @@ class Wyswietlacz
   public:
     Wyswietlacz(int szerokosc, int wysokosc);
 
-    void Wyswietl(Zrodlo &urzadzenie) const;
+    virtual void Wyswietl(Zrodlo &urzadzenie) const;
 
   protected:
     void budujRamke() const;

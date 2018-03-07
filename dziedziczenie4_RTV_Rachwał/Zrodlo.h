@@ -7,9 +7,9 @@ class Zrodlo{
 public:
     Zrodlo(char znak);
 
-    char wyswietl() const;
+    virtual char wyswietl() const;
 
-    std::string nazwa() const;
+    virtual std::string nazwa() const;
 
 protected:
     std::string m_nazwa;

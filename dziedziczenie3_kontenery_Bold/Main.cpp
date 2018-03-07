@@ -40,8 +40,11 @@ using namespace oop;
 
 int main(int argc, char** argv)
 {
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 182101b856929c9fe251bc4671335b97fb15de9b
 	
 	Object();
 

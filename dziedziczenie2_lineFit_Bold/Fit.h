@@ -29,9 +29,7 @@ protected:
 //Obiekt pomocniczy pozwalajacy na wypisanie podstawowych informacji o prostej oraz jej wspolczynnikach
     FitResult fitRes;
 //Sumy poszczegolnych wsporzednych punktow pozwalajace na dopasowanie prostej do puktow oraz jej aktualizacje bez potrzeby przechowywania wszystkich wprowadzanych punktow.
-    double m_sumxy, m_sumxx, m_sumx, m_sumy;
-//Reprezentacja aktualnych wartosci wspolczynnikow a oraz b prostej
-    double m_a, m_b;
-// Informacja o liczbie wprowadzonych punktow. 
+    double m_sumxy, m_sumxx;
+// Informacja o liczbie wprowadzonych punktow.
     int m_numberOfPoints;
 };

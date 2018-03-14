@@ -10,6 +10,7 @@ void FitResult::set(std::string expression, int numberOfParams, double val0, dou
     m_values[0] = val0;
     m_values[1] = val1;
 }
+
 std::string FitResult::expression() const{
     return m_expression;
 }

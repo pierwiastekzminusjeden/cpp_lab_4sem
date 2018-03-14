@@ -51,7 +51,7 @@ class StringWrapper : public Wrapper
 {
   public:
     StringWrapper(std::string value) : m_value(value){};
-    virtual void print(std::ostream &strm) const;
+    virtual void print(std::ostream & strm) const;
 
   private:
     std::string m_value;

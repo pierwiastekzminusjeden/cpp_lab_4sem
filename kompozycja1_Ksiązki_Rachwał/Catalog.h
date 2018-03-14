@@ -14,5 +14,7 @@ public:
     void Print();   
 
 private:
-    
+    std::string m_catName;
+    Book *m_books[10];
+    int m_bookCount;
 };

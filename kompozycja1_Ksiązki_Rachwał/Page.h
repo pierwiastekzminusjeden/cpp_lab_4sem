@@ -16,5 +16,6 @@ public:
     void Print() const;
 
 private:
- 
+    std::string m_header;
+    std::string m_textBuff;
 };

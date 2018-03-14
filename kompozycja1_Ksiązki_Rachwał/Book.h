@@ -24,5 +24,7 @@ public:
 
 
 private:
- 
+    std::string m_title;
+    Page *m_pages[10];
+    int m_pageCount;
 };

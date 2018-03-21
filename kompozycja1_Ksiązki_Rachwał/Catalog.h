@@ -15,6 +15,6 @@ public:
 
 private:
     std::string m_catName;
-    Book *m_books[10];
+    Book *m_books[5];
     int m_bookCount;
 };

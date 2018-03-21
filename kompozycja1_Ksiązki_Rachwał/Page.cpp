@@ -3,6 +3,7 @@
 
 Page::Page(){
     m_header = "empty";
+    m_textBuff = "empty";
 }
 Page::~Page(){
 }
@@ -16,7 +17,6 @@ Page* Page::Copy() const{
     toRet->m_header = m_header;
     toRet->m_textBuff = m_textBuff;
     return toRet;
-    
 }
 
 void Page::AddText(const std::string text){
@@ -25,5 +25,5 @@ void Page::AddText(const std::string text){
 
 void Page::Print() const{
     std::cout << "Page::"<<m_header <<std::endl;
-    std::cout << "Page::"<<m_textBuff << std::endl;
+    std::cout << "Page::text "<<m_textBuff << std::endl;
 }

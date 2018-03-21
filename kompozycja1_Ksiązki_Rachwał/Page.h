@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
-class Page{
 
+class Page{
+friend class Book;
 public:
     Page();
 

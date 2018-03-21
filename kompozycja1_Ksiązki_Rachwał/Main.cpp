@@ -46,14 +46,15 @@ int main()
         
     Book* Template = new Book();
     Template->AddPage(a);           
-    Template->AddPage(a);           
-    Template->AddPage(b);
-    Template->AddPage(b);
-    Template->Print();
+     Template->AddPage(a);           
+     Template->AddPage(b);
+     Template->AddPage(b);
+     Template->Print();
     
     delete a;
     delete b;
     delete c;
+    
 
     Book* Poem = new Book();
 
@@ -67,22 +68,22 @@ int main()
     
     // Kazde wywołanie AddText() to pisanie na kolejnej stronie 
     // Uwaga: do dysposzycje są te strony które zostały jawnie dodane poprzez AddPage()
-    Poem->AddText("Text example added to the poem book");   
-    Poem->AddText("Text example added to the poem book");
-    Poem->AddText("Text example added to the poem book");
-    Poem->AddText("Text example added to the poem book");
-    Poem->AddText("Text example added to the poem book");
+    // Poem->AddText("Text example added to the poem book");   
+    // Poem->AddText("Text example added to the poem book");
+    // Poem->AddText("Text example added to the poem book");
+    // Poem->AddText("Text example added to the poem book");
+    // Poem->AddText("Text example added to the poem book");
     Poem->Print();
 
-    Catalog* AllBooks = new Catalog("MyCatalog");
+    // Catalog* AllBooks = new Catalog("MyCatalog");
     
-    AllBooks->AddBook(Poem);
-    AllBooks->AddBook(Template);
-    AllBooks->AddBook(new Book("Slonie"));
-    AllBooks->AddBook(new Book("Zyrafy"));
-    AllBooks->Print();
+    // AllBooks->AddBook(Poem);
+    // AllBooks->AddBook(Template);
+    // AllBooks->AddBook(new Book("Slonie"));
+    // AllBooks->AddBook(new Book("Zyrafy"));
+    // AllBooks->Print();
 
-    delete AllBooks;
+    // delete AllBooks;
  
     return 0;
 }

@@ -4,13 +4,11 @@
 class Book{
 
 public:
-    Book();
-
-    Book(const std::string name);
+    Book(const std::string name = "page");
 
     ~Book();
 
-    void AddPage(Page *& page);
+    void AddPage(Page * page);
 
     void Print();
 
@@ -22,9 +20,14 @@ public:
 
     void AddText(const std::string newText);
 
+    int getNumberOfPages() const;
+
+    std::string getAuthor() const;
 
 private:
     std::string m_title;
+    std::string m_author;
     Page *m_pages[10];
     int m_pageCount;
+    int m_iter;
 };

@@ -1,12 +1,24 @@
 #pragma once
+#include <string>
+#include <iostream>
+
 
 class File{
-
+    friend std::ostream & operator << ( std::ostream & strm, const File & file);
 public:
-    File();
+    File(const std::string name);
 
-    ~File();
+    virtual ~File();
 
-private:
- 
+    virtual const File * get(std::string toSearch ) const;
+
+    // virtual void print(const int indent) const;
+    
+    int getIndent() const{return m_indent;}
+
+    std::string getName(){return m_name;}
+
+protected:
+    std::string m_name;
+    int m_indent;
 };

@@ -14,7 +14,6 @@ CSilnik::CSilnik(int konie, float pojemnosc, std::string typ){
     m_typ = typ;
 }
 
-
 CSilnik::CSilnik(const CSilnik & toCopy){
     m_konie = toCopy.m_konie;
     m_pojemnosc =toCopy.m_pojemnosc;

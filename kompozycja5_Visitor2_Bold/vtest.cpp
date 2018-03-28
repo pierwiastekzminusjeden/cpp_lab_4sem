@@ -1,10 +1,14 @@
 /* Celem zadania jest implementacja wzorca "wizytujacy" 
-   W tym przykladze obiekty, ktore wizytator bedzie odwiedzal sa dwoch typow int lub float zapakowane w odpowiednie klasy.
+   W tym przykladze obiekty, ktore wizytator bedzie odwiedzal sa
+    dwoch typow int lub float zapakowane w odpowiednie klasy.
    Ich implementacje sa zadane. 
-   Nalezy napisac implementacje PrintingVisitor i AccumulatingVisitor (+ oczywiscie dodatkowe klasy jesli sa konieczne).
+   Nalezy napisac implementacje PrintingVisitor i AccumulatingVisitor
+    (+ oczywiscie dodatkowe klasy jesli sa konieczne).
    
 
-   UWAGA: Wizytator musi posiadac implementacje methody visit odpowiednie !!DLA KAZDEJ KONKRETNEJ KLASY!! poniewaz w kazdej z nich dostep do danych odbywa sie za pomoca innej metody.
+   UWAGA: Wizytator musi posiadac implementacje methody visit 
+   odpowiednie !!DLA KAZDEJ KONKRETNEJ KLASY!! poniewaz w kazdej z
+    nich dostep do danych odbywa sie za pomoca innej metody.
    
  */
 
@@ -43,6 +47,4 @@ int main() {
  0.98 3
 
 3.98
-
-
  */

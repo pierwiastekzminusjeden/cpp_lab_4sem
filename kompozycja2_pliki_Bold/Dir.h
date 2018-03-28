@@ -11,7 +11,9 @@ public:
 
     Dir * operator+=(File * toadd);
 
-    const File * get(std::string toSearch ) const;
+    const File * get(const std::string toSearch ) const;
+
+    virtual std::ostream & print(std::ostream &strm, int indent) const;
 
 private:
     File * m_files[10];

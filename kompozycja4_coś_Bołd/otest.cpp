@@ -1,7 +1,12 @@
 /*
  Celem zadania jest obsluzenie sytuacji, w ktorej mamy wiele klas,
-  w ktorych zmieniaja sie dane (Obserwowani) i wiele klas, w ktorych te dane chcemy monitorowac (Obserwatorzy).
-  W zadaniu podano przyklady klas obserowanych natomiast klas(a/y) basowe sa do na pisania. 
+  w ktorych
+  
+   zmieniaja sie dane (Obserwowani) i wiele klas, w ktorych
+   te dane chcemy monitorowac (Obserwatorzy).
+
+  W zadaniu podano przyklady klas obserowanych natomiast klas(a/y)
+   basowe sa do na pisania. 
   Do napisania jest takze hierachia klas obserwatorow.
   
   UWAGA: W pzypadku, gdy dwie hierarchie klas musza ze soba wspolpracowac 
@@ -24,7 +29,7 @@ public:
     m_dane[m_licznik] = x;
     ++m_licznik;
     noweDaneNadeszly(x);
-  }
+  };
   
 private:
   int m_dane[10];

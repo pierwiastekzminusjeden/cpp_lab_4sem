@@ -6,6 +6,7 @@ std::ostream &operator<<(std::ostream &strm, const PVec &vec){
         std::cout << " ";
     }
     return strm;
+
 }
 PVec::~PVec(){
     for (int i = 0; i < m_counter; i++)

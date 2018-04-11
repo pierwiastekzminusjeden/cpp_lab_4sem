@@ -19,28 +19,28 @@ int main() {
     std::cout << "jakis mebel " << m  << std::endl;
   }
 
-  // {
-  //   Sofa* s = new Sofa(90, 100, 200, 180);
-  //   Mebel *x  = s;  
-  //   std::cout << "jakas sofa "  << *x << std::endl;
-  //   delete x;
-  // }
+  {
+    Sofa* s = new Sofa(90, 100, 200, 180);
+    Mebel *x  = s;  
+    std::cout << "jakas sofa "  << *x << std::endl;
+    delete x;
+  }
   
-  // {
-  //   Lozko* l = new Lozko(90, 100, 200, 190);
-  //   const Mebel* x  = l;  
-  //   std::cout << "kinkg bed "  << *x << std::endl;
-  //   delete x;
-  // }
+  {
+    Lozko* l = new Lozko(90, 100, 200, 190);
+    const Mebel* x  = l;  
+    std::cout << "kinkg bed "  << *x << std::endl;
+    delete x;
+  }
 
-  // { // zabawa z wielokrotnym dziedziczeniem
-  //   Kanapa* k = new Kanapa( 80, 90, 220, 195, 200);
-  //   Sofa* s = k;
-  //   Lozko* l = k; l = 0;
+  { // zabawa z wielokrotnym dziedziczeniem
+    Kanapa* k = new Kanapa( 80, 90, 220, 195, 200);
+    Sofa* s = k;
+    Lozko* l = k; l = 0;
     
-  //   std::cout << "kanapa z ikei " << *s << std::endl;
-  //   delete s;    
-  // }   
+   std::cout << "kanapa z ikei " << *s << std::endl;
+    delete s;    
+  }   
 }
 /* wynik
 jakis mebel Mebel: sz:100 wys:120 dl:150 
@@ -60,4 +60,3 @@ kanapa z ikei jako Mebel: sz:80 wys:90 dl:220
 ~Mebel
    
  */
-© 2018 GitHub, Inc.

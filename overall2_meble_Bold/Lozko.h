@@ -1,12 +1,16 @@
 #pragma once
+#include "Mebel.h"
 
-class Lozko{
+class Lozko: public virtual Mebel{
+
 
 public:
-    Lozko();
+    Lozko(int sz, int wys, int dl, int szsp ): Mebel(sz,wys,dl), m_szSp(szsp){};
 
-    ~Lozko();
+    virtual void output(std::ostream & strm) const; 
 
-private:
- 
+    virtual ~Lozko();
+
+protected:
+    int m_szSp;
 };

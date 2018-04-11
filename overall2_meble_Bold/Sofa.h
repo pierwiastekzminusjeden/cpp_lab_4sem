@@ -1,12 +1,16 @@
 #pragma once
+#include "Mebel.h"
 
-class Sofa{
+class Sofa:public virtual Mebel{
 
 public:
-    Sofa();
+    Sofa(int sz, int wys, int dl, int siedzisko ):Mebel(sz,wys,dl), m_siedzisko(siedzisko){};
 
-    ~Sofa();
+    virtual void output(std::ostream & strm) const; 
 
-private:
- 
+    virtual ~Sofa();
+
+protected:
+    int m_siedzisko;
 };
+

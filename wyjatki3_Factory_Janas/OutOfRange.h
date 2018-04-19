@@ -20,5 +20,6 @@ private:
     std::string m_excName;
     double m_validValue;
     double m_startRange, m_endRange;
+//Wskaznik na fabryke z ktorej wyrzucono wyjatek
     Factory *m_factory;
 };

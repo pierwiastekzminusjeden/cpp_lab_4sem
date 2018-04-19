@@ -13,6 +13,7 @@ Factory::~Factory(){
     std::cout << "Factory destroyed." << std::endl;
 }
 
+
 Value * Factory::PrepareValue(const std::string name, double value){
     std::cout <<"Manufacturing value " << value << std::endl;
     Value *toRet = new Value(name, value);

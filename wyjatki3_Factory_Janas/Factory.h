@@ -1,9 +1,7 @@
 #pragma once
 #include <vector>
 
-#include "Value.h"
-#include "OutOfRange.h"
-
+class Value;
 //klasa reprezentujaca fabryke
 class Factory{
 

@@ -1,13 +1,9 @@
 #include <iostream>
 #include "Value.h"
 
-Value::Value(){
-
+Value::Value(const std::string & name, double value):m_name(name), m_value(value){
+        std::cout <<"Manufacturing value " << value << std::endl;
 }
-
-Value::Value(const std::string name, double value):m_name(name), m_value(value){
-}
-
 
 Value::~Value(){
     std::cout <<"Destroying value " << m_value << std::endl;

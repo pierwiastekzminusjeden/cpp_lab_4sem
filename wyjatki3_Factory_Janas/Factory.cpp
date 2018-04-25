@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Factory.h"
+#include "Value.h"
+#include "OutOfRange.h"
 
 Factory:: Factory(double start, double end): m_start(start), m_end(end){
     std::cout << "Build factory with range [" << m_start <<", " << m_end << "]"<<std::endl; 
@@ -15,7 +17,6 @@ Factory::~Factory(){
 
 
 Value * Factory::PrepareValue(const std::string name, double value){
-    std::cout <<"Manufacturing value " << value << std::endl;
     Value *toRet = new Value(name, value);
     m_values.push_back(toRet);
     if (value < m_start || value > m_end ){

@@ -18,7 +18,6 @@ public:
     UniquePointer(UniquePointer<T> & toCopy){
         m_adress = toCopy.m_adress;
         toCopy.m_adress = 0;
-        
     }
     
     const T & operator*() const{
